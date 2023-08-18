@@ -1,0 +1,11 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-in-row {
+  display: flex;
+  justify-content: left; 
+  gap: 10px; 
+}
