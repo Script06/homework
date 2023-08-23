@@ -7,8 +7,8 @@
   <body>
     <main>
         <h1>Add mark</h1>
-         
-        <form action="save_mark" method="POST">
+        <form action="/marks" method="POST">
+        <input type="hidden" name="id" value="<%= params[:id] %>">
         <p>
           <select name="grade">
             <option value="A">A</option>

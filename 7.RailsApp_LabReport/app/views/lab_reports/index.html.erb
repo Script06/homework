@@ -10,12 +10,11 @@
 
 
 <div id="lab_reports">
-<%# debugger %>
+
   <% @lab_reports.each do |lab_report| %>
     <%= render lab_report %>
     <div class="button-in-row">
-      
-        <%= link_to "Add mark", add_mark_lab_report_path(lab_report), class:  "add_mark"%>
+        <%= link_to "Add mark", mark_path(lab_report), class: "add_mark" %>
         <%= button_to "Remove", lab_report, method: :delete %>
     </div>
   <% end %>

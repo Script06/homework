@@ -8566,3 +8566,1749 @@ Processing by LabReportsController#add_mark as HTML
 Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2525)
 
 
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:17:56 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 11.4ms | Allocations: 11740)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 70.5ms | Allocations: 50711)
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 50827)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.8ms | Allocations: 62130)
+
+
+  
+ActionView::Template::Error (undefined method `add_mark_lab_report_path' for #<ActionView::Base:0x0000000000bab8>
+
+        '.freeze; @output_buffer.append=( link_to "Add mark", add_mark_lab_report_path(lab_report), class:  "add_mark"); @output_buffer.safe_append='
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^):
+    15:     <%= render lab_report %>
+    16:     <div class="button-in-row">
+    17:       
+    18:         <%= link_to "Add mark", add_mark_lab_report_path(lab_report), class:  "add_mark"%>
+    19:         <%= button_to "Remove", lab_report, method: :delete %>
+    20:     </div>
+    21:   <% end %>
+  
+app/views/lab_reports/index.html.erb:18
+app/views/lab_reports/index.html.erb:14
+Started GET "/rails/info/routes" for ::1 at 2023-08-23 19:18:37 +0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (Duration: 11.1ms | Allocations: 8611)
+  Rendered /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.3ms | Allocations: 951)
+  Rendered /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 16.6ms | Allocations: 14852)
+  Rendered layout /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/layouts/application.html.erb (Duration: 17.5ms | Allocations: 15157)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 16252)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-08-23 19:18:38 +0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/actionpack/lib/action_dispatch/middleware/templates/routes/_route.html.erb [45 times] (Duration: 7.2ms | Allocations: 8212)
+  Rendered /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/actionpack/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 9.7ms | Allocations: 13075)
+  Rendered layout /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/layouts/application.html.erb (Duration: 9.9ms | Allocations: 13157)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 13453)
+
+
+Started GET "/rails/info/routes?query=save" for ::1 at 2023-08-23 19:18:48 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"save"}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 10040)
+
+
+Started GET "/rails/info/routes?query=save" for ::1 at 2023-08-23 19:18:49 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"save"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 8731)
+
+
+Started GET "/rails/info/routes?query=save" for ::1 at 2023-08-23 19:18:51 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"save"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 8731)
+
+
+Started GET "/rails/info/routes?query=add" for ::1 at 2023-08-23 19:18:52 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"add"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 8732)
+
+
+Started GET "/rails/info/routes?query=bew" for ::1 at 2023-08-23 19:18:55 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"bew"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 8733)
+
+
+Started GET "/rails/info/routes?query=new" for ::1 at 2023-08-23 19:18:56 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"new"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 8603)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:19:47 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 5.7ms | Allocations: 5912)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.1ms | Allocations: 721)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 12512)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 26335)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 1.3ms | Allocations: 28717)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:20:50 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 6.3ms | Allocations: 5898)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.1ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 12384)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 25967)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 1.4ms | Allocations: 28346)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:20:51 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2637)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:20:58 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2275)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started POST "/marks/save_mark" for ::1 at 2023-08-23 19:20:59 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/marks/save_mark"):
+  
+Started GET "/marks/4" for ::1 at 2023-08-23 19:20:59 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2406)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2675)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:21:01 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.2ms | Allocations: 775)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 2.5ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3642)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5523)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 5785)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:21:02 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 712)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3461)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 5342)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 5597)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:21:47 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2269)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2508)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:22:16 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 6.1ms | Allocations: 5909)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 12451)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 26132)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 1.4ms | Allocations: 28514)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:22:17 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 130)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2600)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3126)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:22:20 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2275)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started POST "/marks/marks" for ::1 at 2023-08-23 19:22:21 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/marks/marks"):
+  
+Started GET "/marks/4" for ::1 at 2023-08-23 19:22:21 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2282)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:22:22 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.2ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 2.1ms | Allocations: 775)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.5ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3612)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 5499)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 5762)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:23:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 220)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 36502)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 0.0ms | Allocations: 40800)
+
+
+Started POST "/marks/marks" for ::1 at 2023-08-23 19:23:04 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/marks/marks"):
+  
+Started GET "/marks/4" for ::1 at 2023-08-23 19:23:04 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2489)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2783)
+
+
+Started POST "/marks/marks" for ::1 at 2023-08-23 19:23:37 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/marks/marks"):
+  
+Started GET "/marks/4" for ::1 at 2023-08-23 19:23:37 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 2280)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started POST "/marks/marks" for ::1 at 2023-08-23 19:24:23 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/marks/marks"):
+  
+Started GET "/marks/4" for ::1 at 2023-08-23 19:24:23 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 14355)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 15367)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:24:33 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 13.1ms | Allocations: 11733)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.1ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 46.9ms | Allocations: 25459)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 27461)
+Completed 200 OK in 68ms (Views: 48.6ms | ActiveRecord: 1.4ms | Allocations: 35131)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:24:35 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2369)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/marks/" for ::1 at 2023-08-23 19:25:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/marks"):
+  
+Started GET "/" for ::1 at 2023-08-23 19:26:23 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aleksandr/.rvm/gems/ruby-3.1.1/bundler/gems/rails-7f8cdb1dc3ae/railties/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 292)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1229)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:26:27 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 8.1ms | Allocations: 5967)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 12513)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 26194)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 1.4ms | Allocations: 28519)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:26:32 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 130)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2600)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3126)
+
+
+Started POST "/" for ::1 at 2023-08-23 19:26:34 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/marks/4" for ::1 at 2023-08-23 19:26:34 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2289)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2527)
+
+
+Started GET "/rails/info/routes?query=mark" for ::1 at 2023-08-23 19:27:14 +0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"mark"}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 10367)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:28:14 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.2ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 14.7ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.0ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 73.7ms | Allocations: 47474)
+  Rendered layout layouts/application.html.erb (Duration: 85.3ms | Allocations: 61313)
+Completed 200 OK in 106ms (Views: 87.0ms | ActiveRecord: 1.3ms | Allocations: 72659)
+
+
+Started GET "/marks/5" for ::1 at 2023-08-23 19:28:16 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2619)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3202)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:28:18 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"C"}
+Completed 404 Not Found in 13484ms (ActiveRecord: 0.0ms | Allocations: 80250)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/5" for ::1 at 2023-08-23 19:28:32 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2509)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:29:10 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 12.9ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 67.2ms | Allocations: 47264)
+  Rendered layout layouts/application.html.erb (Duration: 76.8ms | Allocations: 61103)
+Completed 200 OK in 96ms (Views: 78.4ms | ActiveRecord: 0.9ms | Allocations: 72449)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:29:12 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 2.0ms | Allocations: 781)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3857)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5749)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 6075)
+
+
+Started GET "/marks/5" for ::1 at 2023-08-23 19:29:23 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2601)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3183)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:29:24 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/marks_controller.rb:7:in `create'
+Completed 404 Not Found in 102511ms (ActiveRecord: 0.1ms | Allocations: 104967)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/5" for ::1 at 2023-08-23 19:31:07 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 14375)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 15440)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:31:17 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 11.1ms | Allocations: 5883)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.3ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 18999.7ms | Allocations: 55930)
+  Rendered layout layouts/application.html.erb (Duration: 19003.2ms | Allocations: 57971)
+Completed 200 OK in 19008ms (Views: 19002.3ms | ActiveRecord: 2.2ms | Allocations: 59856)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:31:55 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 12.3ms | Allocations: 11740)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.5ms | Allocations: 956)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 43346.6ms | Allocations: 184437)
+  Rendered layout layouts/application.html.erb (Duration: 43365.8ms | Allocations: 198332)
+Completed 200 OK in 43382ms (Views: 43367.4ms | ActiveRecord: 0.8ms | Allocations: 209676)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:33:31 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 14362)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 15478)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:33:33 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 404 Not Found in 125459ms (ActiveRecord: 0.8ms | Allocations: 123509)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 19:35:38 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2496)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:40:27 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 8.2ms | Allocations: 5951)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 12502)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 26182)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 1.6ms | Allocations: 28624)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:40:30 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2599)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3131)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:40:32 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 404 Not Found in 9293ms (ActiveRecord: 0.0ms | Allocations: 46465)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 19:40:41 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2291)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2528)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:40:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 13.3ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.0ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 66.9ms | Allocations: 47453)
+  Rendered layout layouts/application.html.erb (Duration: 76.0ms | Allocations: 61292)
+Completed 200 OK in 96ms (Views: 77.5ms | ActiveRecord: 1.1ms | Allocations: 72638)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:40:51 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2619)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3202)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:40:52 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 404 Not Found in 37968ms (ActiveRecord: 0.0ms | Allocations: 85602)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 19:41:30 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2491)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2785)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:42:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 10.6ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 60.1ms | Allocations: 47706)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 61545)
+Completed 200 OK in 86ms (Views: 70.5ms | ActiveRecord: 0.8ms | Allocations: 72889)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:42:27 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.3ms | Allocations: 781)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3899)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5791)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 6117)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:42:28 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2607)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3189)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:42:29 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 404 Not Found in 26311ms (ActiveRecord: 0.0ms | Allocations: 84435)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 19:42:55 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2500)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2794)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:43:17 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 11.1ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 59.5ms | Allocations: 47364)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 61203)
+Completed 200 OK in 86ms (Views: 70.4ms | ActiveRecord: 0.8ms | Allocations: 72547)
+
+
+Started GET "/marks/2" for ::1 at 2023-08-23 19:43:18 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2604)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3187)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:43:20 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 404 Not Found in 12060ms (ActiveRecord: 0.0ms | Allocations: 84279)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/2" for ::1 at 2023-08-23 19:48:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 60896.5ms | Allocations: 94700)
+  Rendered layout layouts/application.html.erb (Duration: 60990.2ms | Allocations: 135071)
+Completed 200 OK in 60997ms (Views: 60993.1ms | ActiveRecord: 0.0ms | Allocations: 139369)
+
+
+Started GET "/marks/2" for ::1 at 2023-08-23 19:50:08 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 10437.0ms | Allocations: 49118)
+  Rendered layout layouts/application.html.erb (Duration: 10446.8ms | Allocations: 63356)
+Completed 200 OK in 10449ms (Views: 10448.4ms | ActiveRecord: 0.0ms | Allocations: 64421)
+
+
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" /* loading for pp */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:51:44 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 10.7ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.2ms | Allocations: 852)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 21693.0ms | Allocations: 176606)
+  Rendered layout layouts/application.html.erb (Duration: 21701.0ms | Allocations: 190494)
+Completed 200 OK in 21717ms (Views: 21702.7ms | ActiveRecord: 0.8ms | Allocations: 201838)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 19:52:22 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 5.7ms | Allocations: 5913)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 12466)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 26141)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 1.4ms | Allocations: 28530)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 19:52:25 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 35398.5ms | Allocations: 52361)
+  Rendered layout layouts/application.html.erb (Duration: 35401.9ms | Allocations: 55025)
+Completed 200 OK in 35404ms (Views: 35402.9ms | ActiveRecord: 0.0ms | Allocations: 55609)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 19:53:07 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"F"}
+Completed 404 Not Found in 43338ms (ActiveRecord: 0.0ms | Allocations: 47029)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 19:53:51 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 146113.8ms | Allocations: 57470)
+Started POST "/marks" for ::1 at 2023-08-23 19:56:17 +0300
+  Rendered layout layouts/application.html.erb (Duration: 146117.5ms | Allocations: 60497)
+Completed 200 OK in 146118ms (Views: 146118.0ms | ActiveRecord: 0.0ms | Allocations: 60795)
+
+
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"F"}
+Completed 404 Not Found in 31702ms (ActiveRecord: 0.7ms | Allocations: 51264)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started POST "/marks" for ::1 at 2023-08-23 19:57:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 500 Internal Server Error in 222858ms (ActiveRecord: 0.0ms | Allocations: 109991)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass
+
+        th.backtrace.each{|b|
+                    ^^^^^):
+  
+app/controllers/marks_controller.rb:7:in `create'
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:03:19 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 11.1ms | Allocations: 11744)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 47345)
+  Rendered layout layouts/application.html.erb (Duration: 68.0ms | Allocations: 61184)
+Completed 200 OK in 87ms (Views: 69.9ms | ActiveRecord: 0.8ms | Allocations: 72528)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:03:20 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 5203)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 5294)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 5865)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `lab_report' for #<ActionView::Base:0x0000000000bb58>
+
+        <input type="hidden" name="id" value="'.freeze; @output_buffer.append=( lab_report.id ); @output_buffer.safe_append='">
+                                                                                ^^^^^^^^^^
+Did you mean?  lab_report_url):
+     9:         <h1>Add mark</h1>
+    10:          <%#debugger%>
+    11:         <form action="/marks" method="POST">
+    12:         <input type="hidden" name="id" value="<%= lab_report.id %>">
+    13:         <p>
+    14:           <select name="grade">
+    15:             <option value="A">A</option>
+  
+app/views/marks/show.html.erb:12
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:04:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 14.4ms | Allocations: 11744)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 70.7ms | Allocations: 47746)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 61585)
+Completed 200 OK in 101ms (Views: 84.8ms | ActiveRecord: 1.0ms | Allocations: 72929)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:04:23 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2645)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3228)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:04:24 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"", "grade"=>"A"}
+  [1m[36mLabReport Load (0.2ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+Completed 404 Not Found in 29831ms (ActiveRecord: 0.2ms | Allocations: 85954)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport with 'id'=):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 20:04:54 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 1431.6ms | Allocations: 46025)
+  Rendered layout layouts/application.html.erb (Duration: 1444.9ms | Allocations: 60243)
+Completed 200 OK in 1448ms (Views: 1446.5ms | ActiveRecord: 0.0ms | Allocations: 61312)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:05:02 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 5.9ms | Allocations: 5965)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 12483)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 14489)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 1.3ms | Allocations: 16371)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:05:04 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 64229.0ms | Allocations: 60442)
+  Rendered layout layouts/application.html.erb (Duration: 64231.7ms | Allocations: 62848)
+Completed 200 OK in 64232ms (Views: 64232.1ms | ActiveRecord: 0.0ms | Allocations: 63120)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:06:14 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"", "grade"=>"A"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+Completed 404 Not Found in 12048ms (ActiveRecord: 0.7ms | Allocations: 49578)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport with 'id'=):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 20:06:26 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 197)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 14398)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 15345)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:06:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"", "grade"=>"A"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+Completed 404 Not Found in 27061ms (ActiveRecord: 0.4ms | Allocations: 98632)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport with 'id'=):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 20:07:24 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 63.7ms | Allocations: 35548)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms | Allocations: 36665)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:22:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 306)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 36751)
+Completed 200 OK in 55ms (Views: 48.9ms | ActiveRecord: 0.0ms | Allocations: 41049)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:32:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 306)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 36276)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.0ms | Allocations: 40574)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:32:22 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"4", "grade"=>"D"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mLabReport Update (0.8ms)[0m  [1m[33mUPDATE "lab_reports" SET "grade" = ?, "updated_at" = ? WHERE "lab_reports"."id" = ?[0m  [["grade", "D"], ["updated_at", "2023-08-23 17:32:22.096675"], ["id", 4]]
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 36ms (ActiveRecord: 11.9ms | Allocations: 23014)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:32:22 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 11.5ms | Allocations: 10158)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.0ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 14169)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 16150)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.5ms | Allocations: 16827)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:32:23 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2348)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2625)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:32:25 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"4", "grade"=>"F"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mLabReport Update (0.7ms)[0m  [1m[33mUPDATE "lab_reports" SET "grade" = ?, "updated_at" = ? WHERE "lab_reports"."id" = ?[0m  [["grade", "F"], ["updated_at", "2023-08-23 17:32:25.704519"], ["id", 4]]
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 14ms (ActiveRecord: 10.8ms | Allocations: 2853)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:32:25 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 713)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3472)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5353)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.1ms | Allocations: 5615)
+
+
+Started GET "/marks/5" for ::1 at 2023-08-23 20:32:27 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2270)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:32:29 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"5", "grade"=>"F"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mLabReport Update (0.7ms)[0m  [1m[33mUPDATE "lab_reports" SET "grade" = ?, "updated_at" = ? WHERE "lab_reports"."id" = ?[0m  [["grade", "F"], ["updated_at", "2023-08-23 17:32:29.488170"], ["id", 5]]
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 14ms (ActiveRecord: 10.9ms | Allocations: 2745)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:32:29 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 713)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3467)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5348)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5608)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:32:44 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 14430)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 15491)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:32:45 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"4", "grade"=>"A"}
+  [1m[36mLabReport Load (0.2ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mLabReport Update (1.0ms)[0m  [1m[33mUPDATE "lab_reports" SET "grade" = ?, "updated_at" = ? WHERE "lab_reports"."id" = ?[0m  [["grade", "A"], ["updated_at", "2023-08-23 17:33:00.473137"], ["id", 4]]
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (10.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/marks_controller.rb:9:in `create'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 15330ms (ActiveRecord: 12.4ms | Allocations: 91333)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:33:00 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 9.1ms | Allocations: 5984)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.0ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 9736)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 11729)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.8ms | Allocations: 12400)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:35:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 299)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 36909)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 41207)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:35:03 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"", "grade"=>"A"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+Completed 404 Not Found in 15467ms (ActiveRecord: 0.6ms | Allocations: 94613)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport with 'id'=):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:35:24 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 11.2ms | Allocations: 11744)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 59.0ms | Allocations: 47173)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 61012)
+Completed 200 OK in 84ms (Views: 69.4ms | ActiveRecord: 0.9ms | Allocations: 72356)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:35:25 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2632)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3215)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:35:26 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"grade"=>"A"}
+Completed 404 Not Found in 6023ms (ActiveRecord: 0.0ms | Allocations: 84352)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find LabReport without an ID):
+  
+app/controllers/marks_controller.rb:8:in `create'
+Started GET "/marks/4" for ::1 at 2023-08-23 20:36:08 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 307)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 36563)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.0ms | Allocations: 40861)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:38:26 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 12.0ms | Allocations: 11683)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 725)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 30.4ms | Allocations: 25468)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 39095)
+Completed 200 OK in 65ms (Views: 49.1ms | ActiveRecord: 1.5ms | Allocations: 47275)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:40:36 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 716)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3577)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 5461)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 5761)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:40:38 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 716)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.0ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3486)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5367)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5632)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:40:40 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.6ms | Allocations: 712)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.4ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3455)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5348)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 5603)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:41:31 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 712)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3461)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5343)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 5599)
+
+
+Started GET "/marks/4" for ::1 at 2023-08-23 20:42:28 +0300
+Processing by MarksController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering layout layouts/application.html.erb
+  Rendering marks/show.html.erb within layouts/application
+  Rendered marks/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2632)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3159)
+
+
+Started POST "/marks" for ::1 at 2023-08-23 20:42:30 +0300
+Processing by MarksController#create as TURBO_STREAM
+  Parameters: {"id"=>"4", "grade"=>"B"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/marks_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+  [1m[36mLabReport Update (0.8ms)[0m  [1m[33mUPDATE "lab_reports" SET "grade" = ?, "updated_at" = ? WHERE "lab_reports"."id" = ?[0m  [["grade", "B"], ["updated_at", "2023-08-23 17:42:30.819014"], ["id", 4]]
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/marks_controller.rb:8:in `create'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 16ms (ActiveRecord: 11.4ms | Allocations: 5007)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:42:30 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 735)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3699)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 5589)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 5936)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:44:10 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (1.5ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 24.6ms | Allocations: 5933)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.0ms | Allocations: 720)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 43.7ms | Allocations: 12467)
+  Rendered layout layouts/application.html.erb (Duration: 51.9ms | Allocations: 26153)
+Completed 200 OK in 64ms (Views: 53.3ms | ActiveRecord: 2.6ms | Allocations: 28535)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:44:12 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 712)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3552)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 5436)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5725)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:44:16 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.1ms | Allocations: 712)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3366)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5256)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5511)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:45:48 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.8ms | Allocations: 712)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.7ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 6626)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 10386)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 10641)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:45:56 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.7ms | Allocations: 712)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.6ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3455)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5336)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 5591)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 20:46:19 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.1ms | Allocations: 716)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.1ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 4694)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 8426)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 8690)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 22:12:29 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.4ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.6ms | Allocations: 741)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.4ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 3657)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 5551)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.8ms | Allocations: 5808)
+
+
+Started GET "/lab_reports/new" for ::1 at 2023-08-23 22:12:31 +0300
+Processing by LabReportsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/lab_reports/_form.html.erb:26
+  Rendered lab_reports/_form.html.erb (Duration: 9.4ms | Allocations: 7460)
+  Rendered lab_reports/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 7745)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 9960)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 10344)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 22:12:35 +0300
+Processing by LabReportsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.6ms | Allocations: 773)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 1.5ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3549)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5431)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 5727)
+
+
+Started DELETE "/lab_reports/5" for ::1 at 2023-08-23 22:12:36 +0300
+Processing by LabReportsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/lab_reports_controller.rb:63:in `set_lab_report'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lab_reports_controller.rb:52:in `destroy'
+  [1m[36mLabReport Destroy (1.0ms)[0m  [1m[31mDELETE FROM "lab_reports" WHERE "lab_reports"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/lab_reports_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lab_reports_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 16ms (ActiveRecord: 11.7ms | Allocations: 3315)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 22:12:36 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/lab_reports/_lab_report.html.erb:15
+  Rendered lab_reports/_lab_report.html.erb (Duration: 0.9ms | Allocations: 712)
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2602)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4490)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 4795)
+
+
+Started DELETE "/lab_reports/4" for ::1 at 2023-08-23 22:12:37 +0300
+Processing by LabReportsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports" WHERE "lab_reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/lab_reports_controller.rb:63:in `set_lab_report'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/lab_reports_controller.rb:52:in `destroy'
+  [1m[36mLabReport Destroy (0.8ms)[0m  [1m[31mDELETE FROM "lab_reports" WHERE "lab_reports"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/lab_reports_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/lab_reports_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/lab_reports
+Completed 302 Found in 14ms (ActiveRecord: 11.2ms | Allocations: 2431)
+
+
+Started GET "/lab_reports" for ::1 at 2023-08-23 22:12:37 +0300
+Processing by LabReportsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering lab_reports/index.html.erb within layouts/application
+  [1m[36mLabReport Load (0.1ms)[0m  [1m[34mSELECT "lab_reports".* FROM "lab_reports"[0m
+  ↳ app/views/lab_reports/index.html.erb:14
+  Rendered lab_reports/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1631)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3513)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 3773)
+
+
+Started GET "/users" for ::1 at 2023-08-23 22:13:01 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 196)
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1742)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3961)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 4575)
+
+
+Started GET "/users/2" for ::1 at 2023-08-23 22:13:04 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 641)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2721)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 4152)
+
+
+Started DELETE "/users/2" for ::1 at 2023-08-23 22:13:05 +0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (10.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 16ms (ActiveRecord: 11.5ms | Allocations: 2570)
+
+
+Started GET "/users" for ::1 at 2023-08-23 22:13:05 +0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/_user.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 927)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3012)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 3273)
+
+
+Started GET "/users/1" for ::1 at 2023-08-23 22:13:06 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_user.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 465)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2546)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 3285)
+
+
+Started DELETE "/users/1" for ::1 at 2023-08-23 22:13:07 +0300
+Processing by UsersController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:63:in `set_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 18ms (ActiveRecord: 12.2ms | Allocations: 2437)
+
+
+Started GET "/users" for ::1 at 2023-08-23 22:13:07 +0300
+Processing by UsersController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 791)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2876)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3136)
+
+
+Started GET "/users" for ::1 at 2023-08-23 22:13:09 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2858)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3113)
+
+

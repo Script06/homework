@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
   resources :users
-  resources :lab_reports do
-    member do
-      get 'add_mark'
-      post '/save_mark', to: 'lab_reports#save_mark'
-    end
-  end
+  resources :lab_reports 
+  resources :marks, only: [:show, :create]
+  
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

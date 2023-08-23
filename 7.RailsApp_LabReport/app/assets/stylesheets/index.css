@@ -9,7 +9,7 @@ h1 {
   justify-content: left; 
   gap: 10px; 
 }
-.add_mark {
+.add_mark {    
   --sans-font: -apple-system,BlinkMacSystemFont,"Avenir Next",Avenir,"Nimbus Sans L",Roboto,"Noto Sans","Segoe UI",Arial,Helvetica,"Helvetica Neue",sans-serif;
   --mono-font: Consolas,Menlo,Monaco,"Andale Mono","Ubuntu Mono",monospace;
   --standard-border-radius: 5px;
@@ -24,14 +24,17 @@ h1 {
   --marked: #ffdd33;
   --disabled: #efefef;
   box-sizing: border-box;
-  border: none;
-  border-radius: var(--standard-border-radius);
+  border: 1px solid var(--accent);
   background-color: var(--accent);
-  font-size: 1rem;
   color: white !important;
-  padding: .7rem .9rem;
-  margin: .5rem 0;
   text-decoration: none;
-  font-family: inherit;
   line-height: normal;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  border-radius: var(--standard-border-radius);
+  box-shadow: none;
+  max-width: 100%;
+  display: inline-block;
 }

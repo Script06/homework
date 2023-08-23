@@ -1,19 +1,6 @@
 class LabReportsController < ApplicationController
   before_action :set_lab_report, only: %i[ show edit update destroy ]
 
-  def add_mark
-
-  end
-
-  def save_mark
-    @lab_report = LabReport.find(params[:id])
-    @lab_report.update(
-      grade: params[:grade]
-    )
-
-    redirect_to lab_reports_path
-  end
-
   # GET /lab_reports or /lab_reports.json
   def index
     @lab_reports = LabReport.all
