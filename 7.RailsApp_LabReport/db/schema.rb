@@ -12,9 +12,9 @@
 
 ActiveRecord::Schema[7.1].define(version: 2023_08_18_115757) do
   create_table "lab_reports", force: :cascade do |t|
-    t.string "title", limit: 250
+    t.string "title", limit: 250, null: false
     t.text "description", limit: 500
-    t.string "grade", limit: 2
+    t.string "grade", limit: 4, default: "none", null: false
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

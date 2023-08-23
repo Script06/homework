@@ -3,7 +3,7 @@ class CreateLabReports < ActiveRecord::Migration[7.1]
     create_table :lab_reports do |t|
       t.string :title, limit: 250, null: false
       t.text :description, limit: 500
-      t.string :grade, limit: 2
+      t.string :grade, limit: 4, default: 'none', null: false
       t.references :user, foreign_key: true
 
       t.timestamps
