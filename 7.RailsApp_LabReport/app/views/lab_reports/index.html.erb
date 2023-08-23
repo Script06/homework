@@ -1,0 +1,24 @@
+  <%= stylesheet_link_tag 'index' %>
+
+<p style="color: green"><%= notice %></p> 
+
+    <h1>Labs reports</h1>
+<div class="button-in-row">
+<%= button_to "Add report", new_lab_report_path, method: :get, class: "button-class" %>
+<%= button_to "New user", new_user_path, method: :get, class: "button-class"  %>
+</div>
+
+
+<div id="lab_reports">
+
+  <% @lab_reports.each do |lab_report| %>
+    <%= render lab_report %>
+    <div class="button-in-row">
+        <%= link_to "Add mark", mark_path(lab_report), class: "add_mark" %>
+        <%= button_to "Remove", lab_report, method: :delete %>
+    </div>
+  <% end %>
+</div>
+
+
+
