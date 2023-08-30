@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main>
+        <h1>Add mark</h1>
+        <form action="/marks" method="POST">
+        <input type="hidden" name="id" value="<%= params[:id] %>">
+        <p>
+          <select name="grade">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+          </select>
+        </p>
+        <p><input type="submit" value="сохранить оценку"></p>
+        <p></p>
+        </form>
+    </main>
+  </body>
+</html>

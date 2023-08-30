@@ -1,0 +1,33 @@
+**/.vscode/
+**/tmp/
+**/log/
+
+# Ignore bundler config.
+7.RailsApp_LabReport/.bundle
+
+# Ignore the default SQLite database.
+7.RailsApp_LabReport/db/*.sqlite3
+7.RailsApp_LabReport/db/*.sqlite3-*
+
+# Ignore all logfiles and tempfiles.
+7.RailsApp_LabReport/log/*
+7.RailsApp_LabReport/tmp/*
+7.RailsApp_LabReport/log/.keep
+7.RailsApp_LabReport/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+7.RailsApp_LabReport/tmp/pids/*
+7.RailsApp_LabReport/tmp/pids/
+7.RailsApp_LabReport/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+7.RailsApp_LabReport/storage/*
+7.RailsApp_LabReport/storage/.keep
+7.RailsApp_LabReport/tmp/storage/*
+7.RailsApp_LabReport/tmp/storage/
+7.RailsApp_LabReport/tmp/storage/.keep
+
+7.RailsApp_LabReport/public/assets
+
+# Ignore master key for decrypting credentials and more.
+7.RailsApp_LabReport/config/master.key
