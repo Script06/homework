@@ -1,3 +1,4 @@
+require 'pry'
 module Resource
 
   def connection(routes)
@@ -47,16 +48,14 @@ class PostsController
   def show
     puts 'введите id поста, который хотите отобразить:'
     id = gets.chomp.to_i
-    flag = true
-    self.posts.each_with_index do |post, index|
-      if post[:id] == id
-        puts "Ваш пост id: #{post[:id]}. текст поста:\n#{post[:text]}"
-        flag = false
-        break
-      end
+    
+    result = posts.find {|post| post[:id] == id}
+    
+    if result
+      puts "Ваш пост id: #{result[:id]}.\n текст поста:#{result[:text]}"
+    else
+      puts 'пост с данным id не найден'
     end
-    puts 'пост с данным id не найден' if flag
-
   end
 
   def create
@@ -73,19 +72,13 @@ class PostsController
     id = gets.chomp.to_i
     puts 'введите новый текст поста:'
     new_text = gets.chomp
-    
-    flag = true
-    self.posts.each_with_index do |post, index|
-      if post[:id] == id
-        post[:text] = new_text
-        puts 'пост успешно изменен'
-        flag = false
-        break
-      end
-    end
+    result = posts.find {|post| post[:id] == id}&.merge!(:text => new_text) 
 
-    puts 'пост с данным id не найден' if flag
-    
+    if result
+      puts 'пост успешно изменен'
+    else
+      puts 'пост с данным id не найден'
+    end
   end
 
   def destroy
@@ -93,16 +86,13 @@ class PostsController
     puts 'введите id поста, который хотите удалить:'
     id = gets.chomp.to_i
 
-    flag = true
-    self.posts.each_with_index do |post, index|
-      if post[:id] == id
-        self.posts.delete_at(index)
-        puts 'пост успешно удалён'
-        flag = false
-        break
-      end
+    result = posts.reject! {|post| post[:id] == id}
+    binding.pry
+    if result
+      puts 'пост успешно удалён'
+    else
+      puts 'пост с данным id не найден'
     end
-    puts 'пост с данным id не найден' if flag
   end
 end
 
