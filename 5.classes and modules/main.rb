@@ -1,0 +1,2 @@
+require './CashMachine'
+CashMachine.init
